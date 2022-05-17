@@ -44,10 +44,10 @@ class Plot:
             column (str): column to be plotted.
         """
         plt.figure(figsize=(12, 7))
-        sns.countplot(data=df, x=column)
-        plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         self.logger.info(
             'Plotting a plot_count')
+        sns.countplot(df, hue=column)
+        plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
