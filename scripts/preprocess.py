@@ -6,6 +6,7 @@ import pandas as pd
 import seaborn as sns
 from logger import Logger
 from sklearn.model_selection import cross_validate
+from sklearn.preprocessing import LabelEncoder
 
 
 class Preprocess:
@@ -25,8 +26,10 @@ class Preprocess:
         """Get numerical columns from dataframe."""
         try:
             self.logger.info('Getting Numerical Columns from Dataframe')
-            return df.select_dtypes(
+            num_col = df.select_dtypes(
                 exclude="object").columns.tolist()
+            num_col.remove('date')
+            return num_col
         except Exception:
             self.logger.exception(
                 'Failed to get Numerical Columns from Dataframe')
@@ -64,4 +67,32 @@ class Preprocess:
                 'Failed to convert Column to Datetime')
             sys.exit(1)
 
-    
+    def label_encode(self, df, columns):
+        """Label encode the target variable.
+
+        Parameters
+        ----------
+        df: Pandas Dataframe
+            This is the dataframe containing the features and target variable.
+        columns: list
+        Returns
+        -------
+        The function returns a dataframe with the target variable encoded.
+        """
+        # Label Encoding
+
+        label_encoded_columns = []
+        # For loop for each columns
+        for col in columns:
+            # We define new label encoder to each new column
+            le = LabelEncoder()
+            # Encode our data and create new Dataframe of it,
+            # notice that we gave column name in "columns" arguments
+            column_dataframe = pd.DataFrame(
+                le.fit_transform(df[col]), columns=[col])
+            # and add new DataFrame to "label_encoded_columns" list
+            label_encoded_columns.append(column_dataframe)
+
+        # Merge all data frames
+        label_encoded_columns = pd.concat(label_encoded_columns, axis=1)
+        return label_encoded_columns
