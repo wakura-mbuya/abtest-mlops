@@ -44,10 +44,10 @@ class Plot:
             column (str): column to be plotted.
         """
         plt.figure(figsize=(12, 7))
-        sns.countplot(data=df, x=column)
-        plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         self.logger.info(
             'Plotting a plot_count')
+        sns.countplot(df, hue=column)
+        plt.title(f'Distribution of {column}', size=20, fontweight='bold')
         plt.show()
 
     def plot_bar(self, df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
@@ -147,3 +147,53 @@ class Plot:
         self.logger.info(
             'Plotting a pie chart')
         plt.show()
+
+    # function to get the values in a plot
+
+    def get_value(self, figure):
+        """Get values in a plot.
+
+        Args:
+            figure (_type_): _description_
+        """
+        self.logger.info(
+            'Getting value for a plot')
+        for p in figure.patches:
+            figure.annotate(format(p.get_height()), (p.get_x() + p.get_width() / 2.,
+                                                     p.get_height()), ha='center', va='center',
+                            xytext=(0, 10), textcoords='offset points')
+
+    # function to set figure parameters
+
+    def fig_att(self, figure, title, titlex, titley, size, sizexy, weight):
+        """Plot chart of the data.
+
+        Args:
+            figure (_type_): figure to be plotted.
+            title (_type_): title of plot
+            titlex (_type_): x axis title
+            titley (_type_): y axis title
+            size (_type_): size of plot
+            sizexy (_type_): size of x and y axis
+            weight (_type_): weight of title
+        """
+        # setting the parameters for the title, x and y labels of the plot
+        figure.set_title(title, size=size, weight=weight)
+        figure.set_xlabel(titlex, size=sizexy, weight=weight)
+        figure.set_ylabel(titley, size=sizexy, weight=weight)
+        self.logger.info(
+            'set figure parameters')
+
+    # function to change rotation of the x axis tick labels
+    def rotate(self, figure, rotation):
+        """Rotate the x axis tick labels.
+
+        Args:
+            figure (_type_): figure to be plotted.
+            rotation (_type_): rotation of x axis tick labels
+        """
+        # changing the rotation of the x axis tick labels
+        self.logger.info(
+            'Plotting a chart')
+        for item in figure.get_xticklabels():
+            item.set_rotation(rotation)
