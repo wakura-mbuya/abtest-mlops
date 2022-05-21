@@ -120,7 +120,7 @@ with open("train/metrics.txt", 'w') as outfile:
         f"Validation data accuracy: {decision_tree_result['Validation Accuracy scores'][0]}")
 
 
-# Plot accuacy results
+# Plot accuacy results to cml
 
 # Plot Accuracy Result
 model_name = "Decision Tree"
