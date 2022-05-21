@@ -25,10 +25,12 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
+          cd train
           echo "### Model Metrics" > report.md
-          cat train/metrics.txt >> report.md
-          
+          cat metrics.txt >> report.md
+
           echo "### Data Visualization" >> report.md
           cml-publish decision_tree_accuracy.png --md >> report.md
-          cml send-comment report.md          
+          cml send-comment report.md
+
 #       cat results.txt >> report.md

@@ -113,11 +113,11 @@ decision_tree_model = DecisionTreeClassifier(criterion="entropy",
 decision_tree_result = ml.cross_validation(decision_tree_model, X, y, 5)
 
 # Write scores to file
-with open("train/metrics.txt", 'w') as outfile:
+with open("metrics.txt", 'w') as outfile:
     outfile.write(
-        f"Training data accuracy: {decision_tree_result['Training Accuracy scores'][0]} \n")
+        f"Training data accuracy: {decision_tree_result['Training Accuracy scores'][0]}")
     outfile.write(
-        f"Validation data accuracy: {decision_tree_result['Validation Accuracy scores'][0]} \n")
+        f"Validation data accuracy: {decision_tree_result['Validation Accuracy scores'][0]}")
 
 
 # Plot accuacy results
