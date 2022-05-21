@@ -15,17 +15,19 @@ jobs:
       #   with:
       #     python-version: '3.x'
       - uses: iterative/setup-cml@v1
-      - name: Train model
-        run: |
-          # Your ML workflow goes here
-          pip install -r requirements.txt
-          python train/decisiontree.py
+      # - name: Train model
+      #   run: |
+      #     # Your ML workflow goes here
+      #     pip install -r requirements.txt
+      #     python train/decisiontree.py
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
           cd train
+          pip install -r requirements.txt
+          python decisiontree.py
           echo "### Model Metrics" > report.md
           cat metrics.txt >> report.md
 
