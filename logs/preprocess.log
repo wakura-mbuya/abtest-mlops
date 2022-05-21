@@ -12,3 +12,7 @@
 05-20-2022 23:12:13 : INFO : logger : Getting Categorical Columns from Dataframe
 05-20-2022 23:12:20 : INFO : logger : Getting Numerical Columns from Dataframe
 05-20-2022 23:12:20 : INFO : logger : Getting Categorical Columns from Dataframe
+05-21-2022 08:05:37 : INFO : logger : Successfully Instantiated preprocess Class Object
+05-21-2022 08:06:03 : INFO : logger : Converting Column to Datetime
+05-21-2022 08:06:05 : INFO : logger : Getting Numerical Columns from Dataframe
+05-21-2022 08:06:05 : INFO : logger : Getting Categorical Columns from Dataframe
