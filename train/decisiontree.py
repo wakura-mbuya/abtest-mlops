@@ -146,7 +146,7 @@ ml.plot_result(model_name, "Recall", "Recall scores in 5 Folds",
                'train/decision_tree_recall.png')
 
 
-# F1 Score Results
+# f1 Score Results
 
 # Plot F1-Score Result
 ml.plot_result(model_name, "F1", "F1 Scores in 5 Folds",
