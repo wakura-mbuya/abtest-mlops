@@ -18,18 +18,19 @@ jobs:
       # - name: Train model
       #   run: |
       #     # Your ML workflow goes here
-      #     pip install -r requirements.txt
-      #     python train/decisiontree.py
+          pip install -r requirements.txt
+          python train/decisiontree.py
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          pip install -r requirements.txt
+          # pip install -r requirements.txt
           cd train
-          python decisiontree.py
+          # python decisiontree.py
           echo "### Model Metrics" > report.md
           cat metrics.txt >> report.md
 
           echo "### Data Visualization" >> report.md
-          cml-send-comment report.md
+          cml-publish train/decision_tree_accuracy.png --md >> report.md
+          cml-send-comment --update report.md
