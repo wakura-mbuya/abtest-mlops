@@ -53,7 +53,7 @@ preprocess = Preprocess()
 # data = pd.read_csv(data_url, sep=',')
 # sys.path.insert(1, '/home/jedi/Documents/Tenacademy/Week2/abtest_mlops2/data/')
 # import AdSmartABdata.csv
-data = pd.read_csv('data/AdSmartABdata.csv', sep=',')
+data = pd.read_csv('AdSmartABdata.csv', sep=',')
 
 
 # change the date column to datetime
