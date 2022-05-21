@@ -21,10 +21,10 @@ import os
 # >> #### Import modules
 # sys.path.append(os.path.abspath(os.path.join('../scripts')))
 # from abtest-mlops2
-sys.path.insert(
-    0, '/home/jedi/Documents/Tenacademy/Week2/abtest_mlops2/scripts')
-from preprocess import Preprocess
-from ml import Ml
+# sys.path.insert(
+#     0, '/home/jedi/Documents/Tenacademy/Week2/abtest_mlops2/scripts')
+from scripts.preprocess import Preprocess
+from scripts.ml import Ml
 # from ml import Ml
 # from ml import Ml
 # from preprocess import Preprocess
