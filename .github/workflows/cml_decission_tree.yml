@@ -15,9 +15,9 @@ jobs:
       #   with:
       #     python-version: '3.x'
       - uses: iterative/setup-cml@v1
-      # - name: Train model
-      #   run: |
-      #     # Your ML workflow goes here
+      - name: Train model
+        run: |
+          # Your ML workflow goes here
           pip install -r requirements.txt
           python train/decisiontree.py
       - name: Write CML report
@@ -25,12 +25,11 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          # pip install -r requirements.txt
-          cd train
-          # python decisiontree.py
           echo "### Model Metrics" > report.md
-          cat metrics.txt >> report.md
+          cat train/metrics.txt >> report.md
 
           echo "### Data Visualization" >> report.md
           cml-publish train/decision_tree_accuracy.png --md >> report.md
-          cml-send-comment --update report.md
+          cml send-comment --update report.md
+
+#       cat results.txt >> report.md
