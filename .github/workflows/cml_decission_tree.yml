@@ -25,8 +25,8 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          cd train
           pip install -r requirements.txt
+          cd train
           python decisiontree.py
           echo "### Model Metrics" > report.md
           cat metrics.txt >> report.md
