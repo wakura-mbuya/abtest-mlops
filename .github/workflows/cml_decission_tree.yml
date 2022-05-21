@@ -31,6 +31,6 @@ jobs:
 
           echo "### Data Visualization" >> report.md
           cml-publish decision_tree_accuracy.png --md >> report.md
-          cml send-comment report.md
+          cml-send-comment report.md
 
 #       cat results.txt >> report.md
