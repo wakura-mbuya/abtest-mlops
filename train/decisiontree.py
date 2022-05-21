@@ -113,7 +113,7 @@ decision_tree_model = DecisionTreeClassifier(criterion="entropy",
 decision_tree_result = ml.cross_validation(decision_tree_model, X, y, 5)
 
 # Write scores to file
-with open("metrics.txt", 'w') as outfile:
+with open("train/metrics.txt", 'w') as outfile:
     outfile.write(
         f"Training data accuracy: {decision_tree_result['Training Accuracy scores'][0]}")
     outfile.write(
@@ -127,7 +127,7 @@ model_name = "Decision Tree"
 ml.plot_result(model_name, "Accuracy", "Accuracy scores in 5 Folds",
                decision_tree_result["Training Accuracy scores"],
                decision_tree_result["Validation Accuracy scores"],
-               'decision_tree_accuracy.png')
+               'train/decision_tree_accuracy.png')
 
 # Precision Results
 
@@ -135,7 +135,7 @@ ml.plot_result(model_name, "Accuracy", "Accuracy scores in 5 Folds",
 ml.plot_result(model_name, "Precision", "Precision scores in 5 Folds",
                decision_tree_result["Training Precision scores"],
                decision_tree_result["Validation Precision scores"],
-               'decision_tree_preicision.png')
+               'train/decision_tree_preicision.png')
 
 # Recall Results plot
 
@@ -143,7 +143,7 @@ ml.plot_result(model_name, "Precision", "Precision scores in 5 Folds",
 ml.plot_result(model_name, "Recall", "Recall scores in 5 Folds",
                decision_tree_result["Training Recall scores"],
                decision_tree_result["Validation Recall scores"],
-               'decision_tree_recall.png')
+               'train/decision_tree_recall.png')
 
 
 # F1 Score Results
@@ -152,7 +152,7 @@ ml.plot_result(model_name, "Recall", "Recall scores in 5 Folds",
 ml.plot_result(model_name, "F1", "F1 Scores in 5 Folds",
                decision_tree_result["Training F1 scores"],
                decision_tree_result["Validation F1 scores"],
-               'decision_tree_f1_score.png')
+               'train/decision_tree_f1_score.png')
 
 
 # The model is overfitting as it is working well on the training data but not on the validation set.
