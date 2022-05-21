@@ -1,10 +1,8 @@
-import sys
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from logger import Logger
+# from logger import Logger
 from sklearn.model_selection import cross_validate
 
 
@@ -13,12 +11,13 @@ class Ml:
     def __init__(self) -> None:
         """Initilize class."""
         try:
-            self.logger = Logger("ml.log").get_app_logger()
-            self.logger.info(
-                'Successfully Instantiated ml Class Object')
+            pass
+            # self.logger = Logger("ml.log").get_app_logger()
+            # self.logger.info(
+            # 'Successfully Instantiated ml Class Object')
         except Exception:
-            self.logger.exception(
-                'Failed to Instantiate Preprocessing Class Object')
+            # self.logger.exception(
+            # 'Failed to Instantiate Preprocessing Class Object')
             sys.exit(1)
 
     def cross_validation(self, model, _X, _y, _cv=5):
@@ -74,7 +73,7 @@ class Ml:
 
     # Grouped Bar Chart for both training and validation data
 
-    def plot_result(self, x_label, y_label, plot_title, train_data, val_data):
+    def plot_result(self, x_label, y_label, plot_title, train_data, val_data, image_name):
         """Plot a grouped bar chart showing the training and validation results of the ML model in each fold after applying K-fold cross-validation.
          Parameters
          ----------
@@ -111,4 +110,5 @@ class Ml:
         plt.ylabel(y_label, fontsize=14)
         plt.legend()
         plt.grid(True)
-        plt.show()
+        plt.savefig(image_name)
+        # plt.show()

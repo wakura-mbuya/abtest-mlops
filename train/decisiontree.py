@@ -23,8 +23,10 @@ import os
 # from abtest-mlops2
 # sys.path.insert(
 #     0, '/home/jedi/Documents/Tenacademy/Week2/abtest_mlops2/scripts')
-from scripts.preprocess import Preprocess
-from scripts.ml import Ml
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../scripts')))
+
+from preprocess import Preprocess
+from ml import Ml
 # from ml import Ml
 # from ml import Ml
 # from preprocess import Preprocess
