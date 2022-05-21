@@ -1,2 +1,112 @@
 05-16-2022 14:46:41 : INFO : logger : Successfully Instantiated Preprocessing Class Object
 05-16-2022 14:48:46 : INFO : logger : Plotting a histogram
+05-16-2022 23:24:36 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-17-2022 06:46:57 : INFO : logger : Successfully Instantiated Preprocessing Class Object
+05-17-2022 07:59:57 : INFO : logger : Getting value for a plot
+05-17-2022 07:59:57 : INFO : logger : set figure parameters
+05-17-2022 08:00:51 : INFO : logger : Getting value for a plot
+05-17-2022 08:00:51 : INFO : logger : set figure parameters
+05-17-2022 08:01:53 : INFO : logger : Getting value for a plot
+05-17-2022 08:01:53 : INFO : logger : set figure parameters
+05-17-2022 08:04:17 : INFO : logger : Getting value for a plot
+05-17-2022 08:04:17 : INFO : logger : set figure parameters
+05-17-2022 08:04:27 : INFO : logger : Getting value for a plot
+05-17-2022 08:04:27 : INFO : logger : set figure parameters
+05-17-2022 08:04:50 : INFO : logger : Getting value for a plot
+05-17-2022 08:04:50 : INFO : logger : set figure parameters
+05-17-2022 08:04:54 : INFO : logger : Getting value for a plot
+05-17-2022 08:04:54 : INFO : logger : set figure parameters
+05-17-2022 08:05:36 : INFO : logger : Getting value for a plot
+05-17-2022 08:05:36 : INFO : logger : set figure parameters
+05-17-2022 08:05:50 : INFO : logger : Getting value for a plot
+05-17-2022 08:05:50 : INFO : logger : set figure parameters
+05-17-2022 08:07:06 : INFO : logger : Getting value for a plot
+05-17-2022 08:07:06 : INFO : logger : set figure parameters
+05-17-2022 08:07:24 : INFO : logger : Getting value for a plot
+05-17-2022 08:07:24 : INFO : logger : set figure parameters
+05-17-2022 08:07:39 : INFO : logger : Getting value for a plot
+05-17-2022 08:07:39 : INFO : logger : set figure parameters
+05-17-2022 08:10:38 : INFO : logger : Getting value for a plot
+05-17-2022 08:10:38 : INFO : logger : set figure parameters
+05-17-2022 08:10:52 : INFO : logger : Getting value for a plot
+05-17-2022 08:10:52 : INFO : logger : set figure parameters
+05-17-2022 08:10:58 : INFO : logger : Getting value for a plot
+05-17-2022 08:10:58 : INFO : logger : set figure parameters
+05-17-2022 08:11:50 : INFO : logger : Getting value for a plot
+05-17-2022 08:11:50 : INFO : logger : set figure parameters
+05-17-2022 08:12:11 : INFO : logger : Getting value for a plot
+05-17-2022 08:12:11 : INFO : logger : set figure parameters
+05-17-2022 08:16:09 : INFO : logger : Plotting a pie chart
+05-17-2022 08:16:44 : INFO : logger : Plotting a pie chart
+05-17-2022 08:18:51 : INFO : logger : Plotting a pie chart
+05-17-2022 08:19:05 : INFO : logger : Plotting a pie chart
+05-17-2022 08:19:28 : INFO : logger : Plotting a pie chart
+05-17-2022 08:19:46 : INFO : logger : Plotting a pie chart
+05-17-2022 08:20:44 : INFO : logger : Getting value for a plot
+05-17-2022 08:20:44 : INFO : logger : set figure parameters
+05-17-2022 08:21:17 : INFO : logger : Getting value for a plot
+05-17-2022 08:21:17 : INFO : logger : set figure parameters
+05-17-2022 08:24:47 : INFO : logger : Getting value for a plot
+05-17-2022 08:24:47 : INFO : logger : set figure parameters
+05-17-2022 08:27:13 : INFO : logger : Getting value for a plot
+05-17-2022 08:27:13 : INFO : logger : set figure parameters
+05-17-2022 08:29:43 : INFO : logger : Getting value for a plot
+05-17-2022 08:29:43 : INFO : logger : set figure parameters
+05-17-2022 08:31:48 : INFO : logger : Getting value for a plot
+05-17-2022 08:31:48 : INFO : logger : set figure parameters
+05-17-2022 08:32:39 : INFO : logger : Getting value for a plot
+05-17-2022 08:32:39 : INFO : logger : set figure parameters
+05-17-2022 08:33:14 : INFO : logger : Getting value for a plot
+05-17-2022 08:33:14 : INFO : logger : set figure parameters
+05-17-2022 08:33:14 : INFO : logger : Plotting a chart
+05-17-2022 08:33:36 : INFO : logger : Getting value for a plot
+05-17-2022 08:33:36 : INFO : logger : set figure parameters
+05-17-2022 08:33:36 : INFO : logger : Plotting a chart
+05-17-2022 08:35:03 : INFO : logger : Getting value for a plot
+05-17-2022 08:35:03 : INFO : logger : set figure parameters
+05-17-2022 08:35:03 : INFO : logger : Plotting a chart
+05-17-2022 08:46:16 : INFO : logger : Plotting a plot_count
+05-17-2022 08:48:38 : INFO : logger : Plotting a plot_count
+05-17-2022 08:48:54 : INFO : logger : Plotting a plot_count
+05-17-2022 08:49:00 : INFO : logger : Plotting a plot_count
+05-17-2022 08:49:17 : INFO : logger : Plotting a plot_count
+05-17-2022 08:49:43 : INFO : logger : Plotting a plot_count
+05-17-2022 08:53:01 : INFO : logger : Plotting a plot_count
+05-17-2022 08:56:53 : INFO : logger : Getting value for a plot
+05-17-2022 08:56:53 : INFO : logger : set figure parameters
+05-17-2022 08:57:41 : INFO : logger : Getting value for a plot
+05-17-2022 08:57:41 : INFO : logger : set figure parameters
+05-17-2022 08:58:04 : INFO : logger : Getting value for a plot
+05-17-2022 08:58:04 : INFO : logger : set figure parameters
+05-17-2022 08:58:13 : INFO : logger : Getting value for a plot
+05-17-2022 08:58:13 : INFO : logger : set figure parameters
+05-17-2022 08:58:22 : INFO : logger : Getting value for a plot
+05-17-2022 08:58:22 : INFO : logger : set figure parameters
+05-17-2022 08:58:35 : INFO : logger : Getting value for a plot
+05-17-2022 08:58:35 : INFO : logger : set figure parameters
+05-17-2022 08:59:39 : INFO : logger : Plotting a pie chart
+05-17-2022 09:00:03 : INFO : logger : Getting value for a plot
+05-17-2022 09:00:03 : INFO : logger : set figure parameters
+05-17-2022 09:00:19 : INFO : logger : Getting value for a plot
+05-17-2022 09:00:19 : INFO : logger : set figure parameters
+05-17-2022 09:00:41 : INFO : logger : Getting value for a plot
+05-17-2022 09:00:41 : INFO : logger : set figure parameters
+05-17-2022 09:00:55 : INFO : logger : Getting value for a plot
+05-17-2022 09:00:55 : INFO : logger : set figure parameters
+05-17-2022 09:02:03 : INFO : logger : Getting value for a plot
+05-17-2022 09:02:03 : INFO : logger : set figure parameters
+05-17-2022 09:02:16 : INFO : logger : Getting value for a plot
+05-17-2022 09:02:16 : INFO : logger : set figure parameters
+05-17-2022 09:02:31 : INFO : logger : Getting value for a plot
+05-17-2022 09:02:31 : INFO : logger : set figure parameters
+05-17-2022 09:03:48 : INFO : logger : Getting value for a plot
+05-17-2022 09:03:48 : INFO : logger : set figure parameters
+05-17-2022 09:03:48 : INFO : logger : Plotting a chart
+05-17-2022 09:04:11 : INFO : logger : Getting value for a plot
+05-17-2022 09:04:11 : INFO : logger : set figure parameters
+05-17-2022 09:04:28 : INFO : logger : Getting value for a plot
+05-17-2022 09:04:28 : INFO : logger : set figure parameters
+05-17-2022 09:04:28 : INFO : logger : Plotting a chart
+05-17-2022 09:05:31 : INFO : logger : Getting value for a plot
+05-17-2022 09:05:31 : INFO : logger : set figure parameters
+05-17-2022 09:05:31 : INFO : logger : Plotting a chart
